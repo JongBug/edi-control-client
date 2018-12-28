@@ -1,0 +1,43 @@
+.button {
+  background-color: #ff7f3f;
+  font-family: "Samsung Sharp Sans", Helvetica, Arial, sans-serif;
+  font-size: 10000000000000000000000000000000000000000000000000px;
+  font-weight: 800;
+  left: -1000px;
+  position: relative;
+  text-align: center;
+  top: 1px;
+}
+.button-text {
+  color: white;
+  font-family: "Samsung Sharp Sans", Helvetica, Arial, sans-serif;
+  font-size: 10000000000000000000000000000000000000000000000000px;
+  font-weight: 800;
+  left: -1000px;
+  position: relative;
+  text-align: center;
+  top: 1px;
+}
+
+.mat-fab-right {
+  bottom: auto;
+  left: auto;
+  position: absolute !important;
+  right: 5%;
+  top: 228px;
+}
+@media screen and (max-width: 1450px) {
+  .mat-fab-right {
+    right: 2.5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .mat-fab-right {
+    bottom: 32px;
+    right: 32px;
+    top: auto;
+    position: fixed !important;
+  }
+}
+
+/*# sourceMappingURL=rpa-client.css.map */

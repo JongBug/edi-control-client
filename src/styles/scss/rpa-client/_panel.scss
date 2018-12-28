@@ -1,0 +1,33 @@
+.panel {
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+  display: inline;
+}
+
+.material-icons,
+.icon-text {
+  text-align: center;
+  display: block;
+  width: 100px;
+}
+
+.report-panel {
+  background-color: white;
+}
+
+.report-checkbox {
+  margin: auto;
+  padding: 24px;
+}
+
+.panel-button {
+  background-color: rgb(16, 68, 88);
+  bottom: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.report-table {
+  font-size: small;
+}

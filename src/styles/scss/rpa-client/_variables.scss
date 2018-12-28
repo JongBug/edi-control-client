@@ -1,0 +1,409 @@
+// -------------------------------------------------- //
+//									Variables
+// -------------------------------------------------- //
+//		xx.	Colors
+//					> Primary Pallete
+//					> Secondary Pallete
+//					> Gray Pallete
+//					> Status Colors
+//		xx.	Scaffolding
+//					> Global Styles
+//          > Whiteframes
+//		xx.	Typography
+//					> Font Family
+//					> Font Size
+//					> Line Height
+//					> Headings
+//		xx.	Components
+//					> Paddings
+//					> Line Height
+//					> Borders
+//					> Global Colors
+//		xx.	Tables
+//					> Padding
+//					> Background
+//					> Borders
+//		xx.	Forms
+//					> Text Inputs
+//					> Radio Buttons
+//					> Switches
+//					> Dropdown
+//		xx.	Buttons
+//					> Colors
+//					> Sizes
+//		xx.	Media Querys
+//					> Resolution
+//					> Query Names
+//		xx.	Grid
+//					> Col Variables
+//					> Container Sizes
+//		xx.	Header
+//					> Basic
+//					> Colors
+//					> Links
+//		xx.	Sidenav
+//					> Basic
+//					> Colors
+//					> Links
+//		xx.	Labels
+//					> Background Colors
+//					> Text Color
+//		xx.	Form States and Alerts
+//					> Background Colors
+//					> Text Colors
+//					> Border Colors
+//		xx.	Others
+//					> Misc
+//					> Spinners
+//					> Date Picker
+//					> HR
+// -------------------------------------------------- //
+
+//		xx.	Colors 		//
+
+//	> Primary Pallete	//
+$blue: #1428a0 !global;
+$skyblue: #0077c8 !global;
+$seablue: #00b3e3 !global;
+$black: #000 !global;
+$white: #fff !global;
+$grey: #75787b !global;
+
+//	> Secondary Pallete	//
+$kelp: #00c3b2 !global;
+$clover: #97d653 !global;
+$sprout: #cede00 !global;
+$daffodil: #f8e946 !global;
+$saffron: #ffb546 !global;
+$pepper: #ff7f3f !global;
+$coral: #ff4337 !global;
+$hibiscus: #d939b2 !global;
+$plum: #9363cc !global;
+
+//	> Complementary Pallete	//
+$skyblue-comp: #19a2ff;
+
+//	> Gray Pallete	//
+$gray-base: $black !default;
+$gray-darker: #222425 !default;
+$gray-dark: #4f4f4f !default;
+$gray: #828282 !default;
+$gray-light: #d7d7d7 !default;
+$gray-lighter: rgba(0, 0, 0, 0.07) !default;
+$gray-lightest: #f7f7f7 !default;
+
+//	> Status Colors	//
+$color-primary: $skyblue !default;
+$color-success: $clover !default;
+$color-info: $blue !default;
+$color-warning: $pepper !default;
+$color-danger: $coral !default;
+
+// -------------------------------------------------- //
+//		xx.	Scaffolding 		//
+// Settings for some of the most global styles.
+
+//	> Global Styles	//
+$body-bg: $gray-lightest !default; //	Background color for `<body>`..
+$text-color: $gray-darker !default; //	Global text color on `<body>`.
+$link-color: $skyblue !default; //	Global textual link color.
+$link-hover-color: $skyblue !default; //	Link hover color set via `darken()` function.
+$link-hover-decoration: none !default; //	Link hover decoration.
+
+//   > Scaffolding //
+
+// Whiteframes
+$whiteframe-shadow-soft-1: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+$whiteframe-shadow-soft-2: 0 0 20px 4px rgba(0, 0, 0, 0.1);
+
+// -------------------------------------------------- //
+//		xx.	Typography 		//
+// Font, line-height, and color for: Body text, Headings, and more.
+$font-path: "../assets/fonts";
+
+//	> Font Family	//
+$regular-font: "Samsung One", Helvetica, Arial, sans-serif;
+$bold-font: "Samsung One", Helvetica, Arial, sans-serif;
+$sharp-font: "Samsung Sharp Sans", Helvetica, Arial, sans-serif;
+$material-font: "Material Icons";
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+
+// Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $regular-font !default;
+
+//	> Font Size	//
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2: floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3: ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5: $font-size-base !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//  > Font Weight //
+$font-weight-base: 400;
+
+//	> Line Height	//
+$line-height-base: 1.42857 !default; // 20/14 = Unit-less `line-height` for use in components like buttons.
+// Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default;
+
+//	> Headings	//
+$headings-font-family: inherit !default; // From Body
+$headings-font-weight: 800 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+
+// -------------------------------------------------- //
+//		xx.	Scaffolding 		//
+// Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+//	> Paddings	//
+$padding-base-vertical: 5px !default;
+$padding-base-horizontal: 10px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 20px !default;
+
+$padding-small-vertical: 2.5px !default;
+$padding-small-horizontal: 5px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+//	> Line Height	//
+$line-height-large: 1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-small: 1.5 !default;
+
+//	> Borders	//
+$border-radius-base: 2px !default;
+$border-radius-large: 6px !default;
+$border-radius-medium: 4px !default;
+
+//	> Global Colors	//
+$component-active-color: $white !default; // Global color for active items (e.g., navs or dropdowns).
+$component-active-bg: $color-primary !default; // Global background color for active items (e.g., navs or dropdowns).
+
+// -------------------------------------------------- //
+//		xx.	Tables 		//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+//	> Paddings	//
+$table-cell-padding: 10px !default; // Padding for `<th>`s and `<td>`s.
+$table-condensed-cell-padding: 5px !default; // Padding for cells in `.table-condensed`.
+
+//	> Background	//
+$table-bg: transparent !default; // Default background color used for all tables.
+$table-bg-accent: $gray-lightest !default; // Background color used for `.table-striped`.
+$table-bg-hover: $gray-light !default; // Background color used for `.table-hover`.
+$table-bg-active: $table-bg-hover !default;
+
+//	> Borders	//
+$table-border-color: $gray-light !default; // Border color for table and cell borders.
+$table-striped-color: $gray-light !default;
+
+// -------------------------------------------------- //
+//		xx.	Forms 		//
+
+//	> Text Inputs	//
+$input-border-color: $gray-darker !default;
+$input-bg-color: $white !default;
+$input-error-color: $color-danger !default;
+$input-success-color: $color-success !default;
+$input-focus-color: $color-primary !default;
+$label-font-size: 1rem !default;
+$input-disabled-color: $grey !default;
+$input-disabled-solid-color: $gray !default;
+
+//	> Radio Buttons	//
+$radio-fill-color: $color-primary !default;
+$radio-empty-color: $grey !default;
+
+//	> Switches	//
+$switch-bg-color: $color-primary !default;
+$switch-checked-lever-bg: desaturate(
+  lighten($color-primary, 25%),
+  25%
+) !default;
+$switch-unchecked-bg: $gray-light !default;
+$switch-unchecked-lever-bg: $grey !default;
+
+//	> Dropdown	//
+$dropdown-bg-color: $white !default;
+$dropdown-hover-bg-color: #f6f6f6 !default;
+$dropdown-color: $color-primary !default;
+$dropdown-item-height: 30px !default;
+
+// -------------------------------------------------- //
+//		xx.	Buttons 		//
+
+//	> Colors	//
+$button-bg-color-disabled: $gray-light !default;
+$button-color: $color-primary !default;
+$button-color-disabled: $gray !default;
+$button-color-flat: $gray-darker !default;
+$button-color-raised: $white !default;
+
+//	> Sizes	//
+$button-floating-size: 37px !default;
+$button-height: 36px !default;
+$button-font-size-shared: 1.3rem !default;
+$button-large-icon-font-size: 1.6rem !default;
+$button-line-height: 36px !default;
+
+// -------------------------------------------------- //
+//		xx.	Media Querys 		//
+
+//	> Resolution	//
+$small-screen: 800px !default;
+$small-screen-up: 801px !default;
+$medium-screen: 1366px !default;
+$medium-screen-up: 1367px !default;
+$large-screen: 1800px !default;
+$large-screen-up: 1801px !default;
+
+//	> Query Names	//
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+
+// -------------------------------------------------- //
+//		xx.	Grid 		//
+
+//	> Col Variables	//
+$num-cols: 12 !default;
+$gutter-width: 16px !default;
+$element-top-margin: $gutter-width / 3 !default;
+$element-bottom-margin: ($gutter-width * 2) / 3 !default;
+
+// Navbar collapse
+$grid-float-breakpoint: $small-screen !default; // Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint-max: (
+  $grid-float-breakpoint - 1
+) !default; // Point at which the navbar begins collapsing.
+
+//	> Container Sizes	//
+$container-small: (800px + $gutter-width) !default; // Small screen / tablet
+$container-s: $container-small !default; // For `$screen-sm-min` and up.
+
+$container-medium: (1200px + $gutter-width) !default; // Medium screen / desktop
+$container-m: $container-medium !default; // For `$screen-md-min` and up.
+
+$container-large-large: (
+  1900px + $gutter-width
+) !default; // Large screen / wide desktop
+$container-l: $container-large-large !default; // For `$screen-lg-min` and up.
+
+// -------------------------------------------------- //
+//		xx.	Header 		//
+
+//	> Basic	//
+$header-height: 64px !default;
+$header-height-mobile: 64px !default;
+$header-margin-bottom: $line-height-computed !default;
+$header-border-radius: $border-radius-base !default;
+$header-padding-horizontal: floor(($gutter-width / 2)) !default;
+$header-padding-vertical: (
+  ($header-height - $line-height-computed) / 2
+) !default;
+$header-padding: 0 8px;
+$header-collapse-max-height: 340px !default;
+
+//	> Color	//
+$header-default-color: #777 !default;
+$header-default-bg: #f8f8f8 !default;
+$header-default-border: darken($header-default-bg, 6.5%) !default;
+
+//	> Links	//
+$header-default-link-color: $white !default;
+$header-default-link-hover-bg: transparent !default;
+$header-default-link-active-bg: darken($header-default-bg, 6.5%) !default;
+$header-default-link-disabled-color: $gray-light !default;
+$header-default-link-disabled-bg: transparent !default;
+$header-button-size: 48px;
+
+// -------------------------------------------------- //
+//		xx.	Sidenav 		//
+
+//	> Basic	//
+$nav-width: 64px !default;
+$nav-collapsed-width: 64px !default;
+
+// -------------------------------------------------- //
+//		xx.	Labels 		//
+
+//	> Background Colors	//
+$label-default-bg: $gray-light !default; // Default label background color
+$label-primary-bg: $color-primary !default; // Primary label background color
+$label-success-bg: $color-success !default; // Success label background color
+$label-info-bg: $color-info !default; // Info label background color
+$label-warning-bg: $color-warning !default; // Warning label background color
+$label-danger-bg: $color-danger !default; // Danger label background color
+
+//	> Text Colors	//
+$label-color: #fff !default; // Default label text color
+$label-link-hover-color: #fff !default; // Default text color of a linked label
+
+// -------------------------------------------------- //
+//		xx.	Form States and Alerts 		//
+
+//	> Background Colors	//
+$state-success-bg: $white !default;
+$state-info-bg: $white !default;
+$state-warning-bg: $white !default;
+$state-danger-bg: $white !default;
+
+//	> Text Colors	//
+$state-success-text: $clover !default;
+$state-info-text: $blue !default;
+$state-warning-text: $pepper !default;
+$state-danger-text: $coral !default;
+
+//	> Border Colors	//
+$state-success-border: darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-info-border: darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-warning-border: darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+// -------------------------------------------------- //
+//		xx.	Others 		//
+
+//	> Misc	//
+$component-offset-horizontal: 180px !default; // Horizontal offset for forms and lists.
+$text-muted: $gray-light !default; // Text muted color
+$abbr-border-color: $gray-light !default; // Abbreviations and acronyms border color
+$headings-small-color: $gray-light !default; // Headings small color
+
+$blockquote-small-color: $gray-light !default; // Blockquote small color
+$blockquote-font-size: (
+  $font-size-base * 1.25
+) !default; // Blockquote font size
+$blockquote-border-color: $gray-lightest !default; // Blockquote border color
+
+$page-header-border-color: $gray-lightest !default; // Page header border color
+
+$dl-horizontal-offset: $component-offset-horizontal !default; // Width of horizontal description list titles
+$dl-horizontal-breakpoint: $grid-float-breakpoint !default; // Point at which .dl-horizontal becomes horizontal
+
+//	> Spinners	//
+$spinner-default-color: $color-primary !default;
+
+//	> Datepicker	//
+$datepicker-weekday-bg: darken($color-primary, 7%) !default;
+$datepicker-date-bg: $color-primary !default;
+$datepicker-year: rgba(255, 255, 255, 0.4) !default;
+$datepicker-focus: rgba(0, 0, 0, 0.05) !default;
+$datepicker-selected: $color-primary !default;
+$datepicker-selected-outfocus: desaturate(
+  lighten($color-primary, 35%),
+  15%
+) !default;
+
+//	> HR	//
+$hr-border: $gray-light !default; // Horizontal line color.

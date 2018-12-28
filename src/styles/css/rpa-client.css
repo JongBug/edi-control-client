@@ -1,0 +1,82 @@
+.sidenav {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: black;
+  position: absolute;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+}
+
+.main {
+  padding-top: 14px;
+}
+
+/*.container {
+  background-color: beige;
+  position: absolute;
+  left: 10%;
+  height: 100%;
+  width: 100%;
+  padding-right: 10%;
+}
+
+.container main {
+  left: 20%;
+}*/
+.panel {
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+  display: inline;
+}
+
+.material-icons,
+.icon-text {
+  text-align: center;
+  display: block;
+  width: 100px;
+}
+
+.report-panel {
+  background-color: white;
+}
+
+.report-checkbox {
+  margin: auto;
+  padding: 12ppx;
+}
+
+/*# sourceMappingURL=rpa-client.css.map */
